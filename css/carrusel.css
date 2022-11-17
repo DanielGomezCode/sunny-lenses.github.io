@@ -1,0 +1,116 @@
+/*
+======================
+       CARRUSEL
+======================
+*/
+
+/*General*/
+.slider{
+    background-color: black;
+    padding: 60px 100px;
+}
+
+/*General titulos*/
+.slider .texto-slider p{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    font-family: 'roboto', sans-serif;
+}
+
+.slider .texto-slider h3{
+    padding: 20px 0 60px;
+    font-size: 45px;
+    color: white;
+    font-family: 'roboto', sans-serif;
+}
+
+/*General (contenedor del carrusel)*/
+.contenedor-slider{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0;
+    background-color: #E0FDFF;
+    border-radius: 20px;
+}
+
+.slider-izquierdo, .slider-derecho{
+    width: 5%;
+}
+
+.slider-izquierdo i, .slider-derecho i{
+    font-size: 60px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.slider-izquierdo i:hover, .slider-derecho i:hover{
+    color: rgb(127, 223, 255);
+}
+
+/*General (imagenes)*/
+.slider-imagen{
+    width: 100%;
+}
+
+.slider-imagen img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    /*General*/
+    .slider{
+        text-align: center;
+        padding: 30px;
+    }
+
+    .slider .texto-slider h3{
+        font-size: 40px;
+        padding: 10px 0 20px;
+    }
+
+    .slider-izquierdo i, .slider-derecho i{
+        font-size: 40px;
+    }
+    
+    /*General (contenedor del carrusel)*/
+    .contenedor-slider{
+        padding: 20px;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    /*General*/
+    .slider{
+        padding: 40px 15px;
+    }
+
+    .slider .texto-slider h3{
+        font-size: 30px;
+        padding: 10px 0 20px;
+    }
+
+    .slider .texto-slider p{
+        font-size: 14px;
+    }
+    
+    /*General (contenedor del carrusel)*/
+    .contenedor-slider{
+        padding: 0;
+    }
+
+    .slider-imagen{
+        width: 100%;
+    }
+    
+    .slider-izquierdo i, .slider-derecho i{
+        display: none;
+    }
+
+
+
+}

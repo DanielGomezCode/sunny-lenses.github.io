@@ -1,0 +1,88 @@
+/*
+=====================
+       HEADER
+=====================
+*/
+
+/* General header */
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: rgb(255, 238, 0);
+}
+
+/* Navegador */
+.header .navegador a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* bars */
+.header .bar{
+    border: none;
+    background-color: transparent;
+    display: none;
+    cursor: pointer;
+}
+
+.header .bar i{
+    font-size: 25px;
+}
+
+/*
+=====================
+    MEDIA QUERIES
+=====================
+*/
+
+@media screen and (max-width: 865px){
+    .header{
+        padding: 20px 50px;
+    }
+    
+    .header .bar{
+        display: block;
+    }
+
+    .header .navegador{
+        width: 100%;
+        order: 1;
+        height: 0;
+        transition: .2s ease;
+    }
+
+    .header .navegador.activo{
+        height: 250px;
+        transition: .2s ease;
+    }
+
+    .header .navegador a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        font-size: 18px;
+        display: none;
+    }
+
+    .header .navegador.activo a{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header{
+    padding: 10px 30px;
+    }
+}
+

@@ -1,0 +1,51 @@
+.copyright {
+    display: flex;
+    background:  rgb(187, 213, 221);
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.contenido_copyright {
+    padding-left: 80px;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+}
+
+.terminos_condiciones {
+    padding-right: 80px;
+    font-family: 'roboto', sans-serif;
+    font-size: 12px;
+}
+
+.politica {
+    padding-right: 10px;
+    border-right: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.terminos {
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 865px){
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido_copyright {
+        padding-left: 0;
+    }
+
+    .terminos_condiciones {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+}
